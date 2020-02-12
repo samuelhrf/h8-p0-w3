@@ -17,12 +17,14 @@ function tentukanDeretGeometri(arr)
         else if (beda[j] !== beda[j+1])
         {
             flag = false
+            break
         }
     }
 
     return flag
 }
 
+console.log(tentukanDeretGeometri([1, 3, 0, 9, 27, 81])); // false
 console.log(tentukanDeretGeometri([1, 3, 9, 27, 81])); // true
 console.log(tentukanDeretGeometri([2, 4, 8, 16, 32])); // true
 console.log(tentukanDeretGeometri([2, 4, 6, 8])); // false

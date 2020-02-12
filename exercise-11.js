@@ -17,12 +17,14 @@ function tentukanDeretAritmatika(arr)
         else if (beda[j] !== beda[j+1])
         {
             flag = false
+            break
         }
     }
 
     return flag
 }
 
+console.log(tentukanDeretAritmatika([1, 2, 2, 4, 5, 6])); // false
 console.log(tentukanDeretAritmatika([1, 2, 3, 4, 5, 6])); // true
 console.log(tentukanDeretAritmatika([2, 4, 6, 12, 24])); // false
 console.log(tentukanDeretAritmatika([2, 4, 6, 8])); // true
